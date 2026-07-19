@@ -1,0 +1,157 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="donet_code" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="donet_code_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="donet_code" sap:VirtualizedContainerService.HintSize="902,1148.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="File_Path" />
+      <Variable x:TypeArguments="x:Int32" Name="Count" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[File_Path]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["C:\Users\anwar\OneDrive\Documents\UiPath\One Lakh row\Employee_Data_1048576_Rows.xlsx"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Try&#xA;    ' 1. Open the file instantly in memory&#xA;    Using workbook As New ClosedXML.Excel.XLWorkbook(in_FilePath)&#xA;        &#xA;        ' 2. Target the first worksheet&#xA;        Dim worksheet As ClosedXML.Excel.IXLWorksheet = workbook.Worksheet(1)&#xA;        &#xA;        ' 3. Get the total count of used rows directly&#xA;        out_RowCount = worksheet.RowsUsed().Count()&#xA;        &#xA;    End Using&#xA;Catch ex As System.Exception&#xA;    Throw New System.Exception(&quot;Failed to get row count: &quot; &amp; ex.Message)&#xA;End Try" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="484.8,400.8" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">[File_Path]</InArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="out_RowCount">[Count]</OutArgument>
+      </ui:InvokeCode.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeCode>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,218.4" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Try&#xA;    Using sourceWorkbook As New ClosedXML.Excel.XLWorkbook(in_SourcePath)&#xA;        Using destWorkbook As New ClosedXML.Excel.XLWorkbook()&#xA;            Dim sourceSheet = sourceWorkbook.Worksheet(1)&#xA;            Dim destSheet = destWorkbook.Worksheets.Add(&quot;Filtered Data&quot;)&#xA;            &#xA;            Dim headers = sourceSheet.Row(1)&#xA;            For colIndex As Integer = 1 To 7&#xA;                destSheet.Cell(1, colIndex).Value = headers.Cell(colIndex).Value&#xA;            Next&#xA;            &#xA;            Dim destRowIndex As Integer = 2&#xA;            &#xA;            For Each row In sourceSheet.RowsUsed()&#xA;                If row.RowNumber() = 1 Then &#xA;                    Continue For&#xA;                End If&#xA;                &#xA;                Dim ageStr As String = row.Cell(4).GetString()&#xA;                Dim countryStr As String = row.Cell(6).GetString()&#xA;                &#xA;                Dim age As Integer = 0&#xA;                If Integer.TryParse(ageStr, age) Then&#xA;                    If age &gt; 30 AndAlso countryStr = &quot;Canada&quot; Then&#xA;                        For colIndex As Integer = 1 To 7&#xA;                            destSheet.Cell(destRowIndex, colIndex).Value = row.Cell(colIndex).Value&#xA;                        Next&#xA;                        destRowIndex = destRowIndex + 1&#xA;                    End If&#xA;                End If&#xA;            Next&#xA;            &#xA;            destWorkbook.SaveAs(in_DestinationPath)&#xA;        End Using&#xA;    End Using&#xA;Catch ex As System.Exception&#xA;    Throw New System.Exception(&quot;Filtering Practice Failed: &quot; &amp; ex.Message)&#xA;End Try" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
+            <ui:InvokeCode.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">[File_Path]</InArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="output_Path">["C:\Users\anwar\OneDrive\Documents\UiPath\One Lakh row\Emp_Data.xlsx"]</OutArgument>
+            </ui:InvokeCode.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeCode>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,218.4" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="using System;&#xA;using System.Collections.Generic;&#xA;using System.Diagnostics;&#xA;using ClosedXML.Excel;&#xA;&#xA;try&#xA;{&#xA;    //==========================&#xA;    // Start Performance Timer&#xA;    //==========================&#xA;    Stopwatch sw = Stopwatch.StartNew();&#xA;&#xA;    //==========================&#xA;    // Variables&#xA;    //==========================&#xA;    int totalEmployees = 0;&#xA;    int highSalaryCount = 0;&#xA;    int missingEmailCount = 0;&#xA;    int duplicateMobileCount = 0;&#xA;&#xA;    double highestSalary = 0;&#xA;    double lowestSalary = double.MaxValue;&#xA;    double totalSalary = 0;&#xA;&#xA;    HashSet&lt;string&gt; mobileSet = new HashSet&lt;string&gt;();&#xA;&#xA;    Dictionary&lt;string, int&gt; countryCount = new Dictionary&lt;string, int&gt;();&#xA;&#xA;    //==========================&#xA;    // Open Excel&#xA;    //==========================&#xA;    using (var workbook = new XLWorkbook(in_FilePath))&#xA;    {&#xA;        var worksheet = workbook.Worksheet(1);&#xA;&#xA;        foreach (var row in worksheet.RowsUsed())&#xA;        {&#xA;            // Skip Header&#xA;            if (row.RowNumber() == 1)&#xA;                continue;&#xA;&#xA;            totalEmployees++;&#xA;&#xA;            //--------------------------------------------------&#xA;            // Read Cell Values&#xA;            //--------------------------------------------------&#xA;&#xA;            double salary = 0;&#xA;&#xA;            Double.TryParse(row.Cell(3).GetString(), out salary);&#xA;&#xA;            string mobile = row.Cell(5).GetString().Trim();&#xA;&#xA;            string country = row.Cell(6).GetString().Trim();&#xA;&#xA;            string email = row.Cell(7).GetString().Trim();&#xA;&#xA;            //--------------------------------------------------&#xA;            // Salary &gt; 100000&#xA;            //--------------------------------------------------&#xA;&#xA;            if (salary &gt; 100000)&#xA;                highSalaryCount++;&#xA;&#xA;            //--------------------------------------------------&#xA;            // Highest Salary&#xA;            //--------------------------------------------------&#xA;&#xA;            if (salary &gt; highestSalary)&#xA;                highestSalary = salary;&#xA;&#xA;            //--------------------------------------------------&#xA;            // Lowest Salary&#xA;            //--------------------------------------------------&#xA;&#xA;            if (salary &lt; lowestSalary)&#xA;                lowestSalary = salary;&#xA;&#xA;            //--------------------------------------------------&#xA;            // Total Salary&#xA;            //--------------------------------------------------&#xA;&#xA;            totalSalary += salary;&#xA;&#xA;            //--------------------------------------------------&#xA;            // Duplicate Mobile&#xA;            //--------------------------------------------------&#xA;&#xA;            if (!string.IsNullOrEmpty(mobile))&#xA;            {&#xA;                if (!mobileSet.Add(mobile))&#xA;                    duplicateMobileCount++;&#xA;            }&#xA;&#xA;            //--------------------------------------------------&#xA;            // Missing Email&#xA;            //--------------------------------------------------&#xA;&#xA;            if (string.IsNullOrWhiteSpace(email))&#xA;                missingEmailCount++;&#xA;&#xA;            //--------------------------------------------------&#xA;            // Country Count&#xA;            //--------------------------------------------------&#xA;&#xA;            if (!string.IsNullOrWhiteSpace(country))&#xA;            {&#xA;                if (countryCount.ContainsKey(country))&#xA;                    countryCount[country]++;&#xA;                else&#xA;                    countryCount.Add(country, 1);&#xA;            }&#xA;&#xA;        }&#xA;    }&#xA;&#xA;    //==========================&#xA;    // Stop Timer&#xA;    //==========================&#xA;    sw.Stop();&#xA;&#xA;    //==========================&#xA;    // Average Salary&#xA;    //==========================&#xA;&#xA;    double averageSalary = 0;&#xA;&#xA;    if (totalEmployees &gt; 0)&#xA;        averageSalary = totalSalary / totalEmployees;&#xA;&#xA;    //==========================&#xA;    // Prepare Country Report&#xA;    //==========================&#xA;&#xA;    string countryReport = &quot;&quot;;&#xA;&#xA;    foreach (var item in countryCount)&#xA;    {&#xA;        countryReport += item.Key + &quot; : &quot; + item.Value + Environment.NewLine;&#xA;    }&#xA;&#xA;    //==========================&#xA;    // Final Output&#xA;    //==========================&#xA;&#xA;    out_Result =&#xA;        &quot;========== Employee Analytics ==========&quot; + Environment.NewLine +&#xA;        Environment.NewLine +&#xA;        &quot;Total Employees      : &quot; + totalEmployees.ToString(&quot;N0&quot;) + Environment.NewLine +&#xA;        &quot;High Salary (&gt;100K)  : &quot; + highSalaryCount.ToString(&quot;N0&quot;) + Environment.NewLine +&#xA;        &quot;Highest Salary       : &quot; + highestSalary.ToString(&quot;N2&quot;) + Environment.NewLine +&#xA;        &quot;Lowest Salary        : &quot; + lowestSalary.ToString(&quot;N2&quot;) + Environment.NewLine +&#xA;        &quot;Average Salary       : &quot; + averageSalary.ToString(&quot;N2&quot;) + Environment.NewLine +&#xA;        &quot;Duplicate Mobiles    : &quot; + duplicateMobileCount.ToString(&quot;N0&quot;) + Environment.NewLine +&#xA;        &quot;Missing Emails       : &quot; + missingEmailCount.ToString(&quot;N0&quot;) + Environment.NewLine +&#xA;        Environment.NewLine +&#xA;        &quot;----------- Country Wise Count -----------&quot; + Environment.NewLine +&#xA;        countryReport +&#xA;        Environment.NewLine +&#xA;        &quot;Execution Time       : &quot; + sw.Elapsed.ToString();&#xA;}&#xA;catch (Exception ex)&#xA;{&#xA;    out_Result = &quot;Error : &quot; + ex.Message;&#xA;}" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+            <ui:InvokeCode.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">[File_Path]</InArgument>
+              <OutArgument x:TypeArguments="x:Int32" x:Key="out_FilteredCount">[Count]</OutArgument>
+            </ui:InvokeCode.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeCode>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484.8,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Count : &quot;+Count.ToString]" />
+  </Sequence>
+</Activity>
