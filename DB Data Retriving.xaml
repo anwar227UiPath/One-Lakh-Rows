@@ -91,7 +91,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DB_Data_Retriving" sap:VirtualizedContainerService.HintSize="903.2,591.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DB_Data_Retriving" sap:VirtualizedContainerService.HintSize="887.2,591.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="Connection_String" />
       <Variable x:TypeArguments="sd:DataTable" Name="DT" />
@@ -102,7 +102,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="Data Source=ANWAR\SQLEXPRESS01;Initial Catalog=My_World;Integrated Security=True;Encrypt=False" DatabaseConnection="[Connection_String]" />
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[DT]" DisplayName="Run Query" ExistingDbConnection="[Connection_String]" sap:VirtualizedContainerService.HintSize="449.6,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="SELECT *&#xD;&#xA;FROM Employee_Stage&#xD;&#xA;WHERE Country = 'India';">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[DT]" DisplayName="Run Query" ExistingDbConnection="[Connection_String]" sap:VirtualizedContainerService.HintSize="449.6,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="SELECT *&#xA;FROM Employee_Stage&#xA;WHERE Country = 'India';">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
